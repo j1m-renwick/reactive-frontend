@@ -1,3 +1,13 @@
+# Event-broadcasting sample frontend
+
+This project is a proof of concept for a microservice broadcasting events to frontend browser clients as a result of one of it's API endpoints being invoked.
+
+On mounting a component, the webpage opens a websocket to the microservice, and subscribes to receive whatever events are broadcast to it.  It displays the last event it received.
+
+###To run
+
+- npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
