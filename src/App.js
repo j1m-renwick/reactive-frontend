@@ -1,10 +1,10 @@
 import './App.css';
-import SubbedComponent from "./SubbedComponent";
+import MainPage from "./MainPage";
 
 function App() {
   return (
     <div className="App">
-      <SubbedComponent/>
+      <MainPage/>
     </div>
   );
 }

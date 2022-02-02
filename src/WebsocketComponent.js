@@ -2,13 +2,13 @@ import {useEffect, useState} from "react";
 import {webSocket} from 'rxjs/webSocket';
 
 
-export default function SubbedComponent() {
+export default function WebsocketComponent({userId}) {
 
     const [item, setItem] = useState("")
 
     useEffect(() => {
-        console.log('Mounting ...')
-        let socket = webSocket('ws://localhost:8123/ws/myPracticeId')
+        console.log(`Connecting to websocket ---> ws://localhost:8123/ws/myPracticeId/${userId}`)
+        let socket = webSocket(`ws://localhost:8123/ws/myPracticeId/${userId}`)
             .subscribe({
                 next: (msg) => {
                     console.log('message received');
