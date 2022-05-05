@@ -2,11 +2,18 @@
 
 This project is a proof of concept for a microservice broadcasting events to frontend browser clients as a result of one of it's API endpoints being invoked.
 
-On mounting a component, the webpage opens a websocket to the microservice, and subscribes to receive whatever events are broadcast to it.  It displays the last event it received.
+On logging in, the webpage opens a websocket to the microservice for the user, and subscribes to receive whatever events are broadcast to it.  
+
+It displays the last event it received, and some stateful card data.  The subtitle of these cards will be updated when an appropriate event matching the card ID is received.
 
 ###To run
 
 - npm start
+- log in using username: alice; practice: myPracticeId
+- note the text on the cards
+- send an update event for one of the cards using the backend app (see backend README for details)
+- note the event and text changes showing
+
 
 # Getting Started with Create React App
 
